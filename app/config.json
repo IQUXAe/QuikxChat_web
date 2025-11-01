@@ -1,0 +1,1 @@
+{\n  \"application_name\": \"QuikxChat\",\n  \"application_welcome_message\": null,\n  \"default_homeserver\": \"matrix.org\",\n  \"web_base_url\": \"\",\n  \"privacy_url\": \"https://github.com/iquxae/quikx-chat/blob/main/PRIVACY.md\",\n  \"render_html\": false,\n  \"hide_redacted_events\": false,\n  \"hide_unknown_events\": false\n}

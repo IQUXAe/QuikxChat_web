@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuikxChat - Secure Matrix Messenger</title>
+    <meta name="description" content="Modern Matrix messenger with end-to-end encryption, message translation, and cross-platform support">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo2.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="logo2.png" alt="QuikxChat">
+                <span>QuikxChat</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#screenshots">Screenshots</a>
+                <a href="#download">Download</a>
+                <a href="app/" class="btn btn-primary web-app-btn">Web App</a>
+                <div class="theme-toggle" id="theme-toggle">
+                    <div class="theme-slider">
+                        <span class="theme-icon">🌙</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Secure Matrix Messenger</h1>
+                <p>Modern messaging with end-to-end encryption, message translation, and cross-platform support</p>
+                <div class="cta-buttons">
+                    <a href="https://github.com/IQUXAe/Quikx_chat/releases" class="btn btn-primary">Download</a>
+                    <a href="https://github.com/IQUXAe/Quikx_chat" class="btn btn-secondary">View on GitHub</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <div class="screen">
+                        <div class="camera-notch"></div>
+                        <div class="status-bar">
+                            <span id="current-time">12:00</span>
+                            <div class="status-icons">
+                                <div class="signal-icon">
+                                    <div class="signal-bar"></div>
+                                    <div class="signal-bar"></div>
+                                    <div class="signal-bar"></div>
+                                    <div class="signal-bar"></div>
+                                </div>
+                                <div class="wifi-icon">
+                                    <div class="wifi-arc"></div>
+                                    <div class="wifi-arc"></div>
+                                    <div class="wifi-arc"></div>
+                                    <div class="wifi-dot"></div>
+                                </div>
+                                <div class="battery-icon">
+                                    <div class="battery-body">
+                                        <div class="battery-fill"></div>
+                                    </div>
+                                    <div class="battery-tip"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-preview">
+                            <div class="message received">
+                                <span>Hey! How are you?</span>
+                                <span class="message-time">11:30</span>
+                            </div>
+                            <div class="message sent">
+                                <span>Great! Just testing QuikxChat 🚀</span>
+                                <span class="message-time">11:31</span>
+                            </div>
+                            <div class="message received">
+                                <span>Awesome! Love the new design</span>
+                                <span class="message-time">11:32</span>
+                            </div>
+                        </div>
+                        <div class="chat-input-bar">
+                            <div class="input-icon">😊</div>
+                            <div class="input-container">
+                                <div class="input-text" contenteditable="true" data-placeholder="Message..."></div>
+                            </div>
+                            <div class="send-button">🎤</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+                            <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/>
+                        </svg>
+                    </div>
+                    <h3>End-to-End Encryption</h3>
+                    <p>Your messages are secured with E2EE by default</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+                            <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/>
+                        </svg>
+                    </div>
+                    <h3>Rich Communication</h3>
+                    <p>Text, voice calls, video calls, and file sharing</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+                            <path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/>
+                        </svg>
+                    </div>
+                    <h3>Translation</h3>
+                    <p>Built-in message translation</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+                            <path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"/>
+                        </svg>
+                    </div>
+                    <h3>AI Voice-to-Text <span style="font-size: 0.7em; color: #ff9800;">BETA</span></h3>
+                    <p>Convert voice messages to text with AI (optional)</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+                            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                            <path d="M19 13c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 1c-1.67 0-5 .83-5 2.5V18h10v-1.5c0-1.67-3.33-2.5-5-2.5z" opacity=".3"/>
+                        </svg>
+                    </div>
+                    <h3>Multi-Account</h3>
+                    <p>Support for multiple Matrix accounts</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+                            <path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/>
+                        </svg>
+                    </div>
+                    <h3>Cross-Platform</h3>
+                    <p>Android, Linux, Windows, and Web</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+                            <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4c-1.48 0-2.85.43-4.01 1.17l1.46 1.46C10.21 6.23 11.08 6 12 6c3.04 0 5.5 2.46 5.5 5.5v.5H19c1.66 0 3 1.34 3 3 0 1.13-.64 2.11-1.56 2.62l1.45 1.45C23.16 18.16 24 16.68 24 15c0-2.64-2.05-4.78-4.65-4.96zM3 5.27l2.75 2.74C2.56 8.15 0 10.77 0 14c0 3.31 2.69 6 6 6h11.73l2 2L21 20.73 4.27 4 3 5.27zM7.73 10l8 8H6c-2.21 0-4-1.79-4-4s1.79-4 4-4h1.73z"/>
+                        </svg>
+                    </div>
+                    <h3>Privacy Focused</h3>
+                    <p>No data collection or tracking</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="screenshots" class="screenshots">
+        <div class="container">
+            <h2>Screenshots</h2>
+            <div class="screenshots-grid">
+                <picture class="screenshot-desktop">
+                    <source srcset="screenshots/Desktop_light1.png" media="(prefers-color-scheme: light)">
+                    <img src="screenshots/desktop_dark1.png" alt="Desktop view" class="screenshot-img">
+                </picture>
+                <picture class="screenshot-desktop">
+                    <source srcset="screenshots/Desktop_light2.png" media="(prefers-color-scheme: light)">
+                    <img src="screenshots/desktop_dark2.png" alt="Desktop chat" class="screenshot-img">
+                </picture>
+                <picture class="screenshot-mobile">
+                    <source srcset="screenshots/phone_chats_light.png" media="(prefers-color-scheme: light)">
+                    <img src="screenshots/phone_chats_dark.png" alt="Chat list" class="screenshot-img">
+                </picture>
+                <picture class="screenshot-mobile">
+                    <source srcset="screenshots/phone_chat_light1.png" media="(prefers-color-scheme: light)">
+                    <img src="screenshots/phone_chat_dark1.png" alt="Chat view" class="screenshot-img">
+                </picture>
+                <picture class="screenshot-mobile">
+                    <source srcset="screenshots/phone_chat_light2.png" media="(prefers-color-scheme: light)">
+                    <img src="screenshots/phone_chat_dark2.png" alt="Chat details" class="screenshot-img">
+                </picture>
+                <picture class="screenshot-mobile">
+                    <source srcset="screenshots/phone_settings_light.png" media="(prefers-color-scheme: light)">
+                    <img src="screenshots/phone_settings_daark.png" alt="Settings" class="screenshot-img">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download">
+        <div class="container">
+            <h2>Download</h2>
+            <div class="download-grid">
+                <div class="download-card">
+                    <div class="platform-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="64" height="64">
+                            <path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14zm-1-6h-3V8h-2v5H8l4 4 4-4z"/>
+                        </svg>
+                    </div>
+                    <h3>Android</h3>
+                    <p>Android 5.0+</p>
+                    <a href="https://github.com/IQUXAe/Quikx_chat/releases/latest" class="btn btn-download">Download APK</a>
+                </div>
+                <div class="download-card">
+                    <div class="platform-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="64" height="64">
+                            <path d="M20 18c1.1 0 1.99-.9 1.99-2L22 5c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2H0c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2h-4zM4 5h16v11H4V5zm8 14c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/>
+                        </svg>
+                    </div>
+                    <h3>Linux</h3>
+                    <p>AppImage / tar.gz</p>
+                    <a href="https://github.com/IQUXAe/Quikx_chat/releases/latest" class="btn btn-download">Download</a>
+                </div>
+                <div class="download-card">
+                    <div class="platform-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="64" height="64">
+                            <path d="M4 6h18V4H4c-1.1 0-2 .9-2 2v11H0v3h14v-3H4V6zm19 2h-6c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-1 9h-4v-7h4v7z"/>
+                        </svg>
+                    </div>
+                    <h3>Windows</h3>
+                    <p>Windows 10+</p>
+                    <a href="https://github.com/IQUXAe/Quikx_chat/releases/latest" class="btn btn-download">Download</a>
+                </div>
+                <div class="download-card">
+                    <div class="platform-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="64" height="64">
+                            <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/>
+                        </svg>
+                    </div>
+                    <h3>Web</h3>
+                    <p>Any browser</p>
+                    <a href="app/" class="btn btn-download">Open App</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Open Source</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">E2EE</div>
+                    <div class="stat-label">Encrypted by Default</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">4+</div>
+                    <div class="stat-label">Platforms</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">Free</div>
+                    <div class="stat-label">Forever</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" style="background: var(--surface-variant);">
+        <div class="container">
+            <h2>Why QuikxChat?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3>Frequent Updates</h3>
+                    <p>Regular updates with new features and improvements</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+                            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                        </svg>
+                    </div>
+                    <h3>Latest Dependencies</h3>
+                    <p>Always up-to-date with the newest Matrix SDK and security patches</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+                            <path d="M12 2l-5.5 9h11z"/>
+                            <circle cx="17.5" cy="17.5" r="4.5"/>
+                            <path d="M3 13.5h8v8H3z"/>
+                        </svg>
+                    </div>
+                    <h3>Feature Rich</h3>
+                    <p>Continuous expansion of functionality with user-requested features</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">What is Matrix?</div>
+                    <div class="faq-answer">Matrix is an open standard for secure, decentralized, real-time communication. It allows you to communicate with anyone, regardless of which app they use.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Is QuikxChat free?</div>
+                    <div class="faq-answer">Yes! QuikxChat is completely free and open source under the AGPL-3.0 license.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How secure is QuikxChat?</div>
+                    <div class="faq-answer">QuikxChat uses end-to-end encryption (E2EE) by default for all messages, ensuring only you and your recipient can read them.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Can I use my existing Matrix account?</div>
+                    <div class="faq-answer">Absolutely! QuikxChat works with any Matrix homeserver, so you can use your existing account or create a new one.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="matrix">
+        <div class="container">
+            <h2>Powered by Matrix</h2>
+            <p>QuikxChat uses the Matrix protocol for secure, decentralized communication</p>
+            <a href="https://matrix.org" class="btn btn-secondary">Learn More</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>QuikxChat</h4>
+                    <p>Modern Matrix messenger</p>
+                    <p>Based on <a href="https://github.com/krille-chan/fluffychat">FluffyChat</a> by Christian Pauly</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <a href="https://github.com/IQUXAe/Quikx_chat">GitHub</a>
+                    <a href="https://github.com/IQUXAe/Quikx_chat/issues">Issues</a>
+                    <a href="https://matrix.org">Matrix Protocol</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Credits</h4>
+                    <p>Based on <a href="https://github.com/krille-chan/fluffychat">FluffyChat</a></p>
+                    <p>Logo by <a href="https://t.me/n9ntik">n9ntik</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 QuikxChat. Licensed under AGPL-3.0</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
